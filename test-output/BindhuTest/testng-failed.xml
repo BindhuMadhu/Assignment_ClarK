@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BindhuTest]" parallel="none">
+  <test name="AutoGroupTest(failed)" parallel="none">
+    <classes>
+      <class name="com.app.test.TestCases">
+        <methods>
+          <include name="TestCase_001"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="TestCase_003"/>
+        </methods>
+      </class> <!-- com.app.test.TestCases -->
+    </classes>
+  </test> <!-- AutoGroupTest(failed) -->
+</suite> <!-- Failed suite [BindhuTest] -->

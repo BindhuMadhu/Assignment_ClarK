@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[started test : TestCase_001]]>
+    </line>
+    <line>
+      <![CDATA[description : : To verify user can able to add valid address and display of newly added address]]>
+    </line>
+    <line>
+      <![CDATA[============================================launching Url============================================]]>
+    </line>
+    <line>
+      <![CDATA[Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]]]>
+    </line>
+    <line>
+      <![CDATA[status : Passed]]>
+    </line>
+  </reporter-output>
+  <suite name="com.app.test.TestCases" duration-ms="16190" started-at="2021-03-15T10:10:48Z" finished-at="2021-03-15T10:11:04Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="16190" started-at="2021-03-15T10:10:48Z" finished-at="2021-03-15T10:11:04Z">
+      <class name="com.app.test.TestCases">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.app.test.TestCases@77b52d12]" name="setup" is-config="true" duration-ms="4694" started-at="2021-03-15T11:10:48Z" finished-at="2021-03-15T11:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TestCase_001()[pri:0, instance:com.app.test.TestCases@77b52d12]" name="TestCase_001" duration-ms="11451" started-at="2021-03-15T11:10:53Z" description="To verify user can able to add valid address and display of newly added address" finished-at="2021-03-15T11:11:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[description : : To verify user can able to add valid address and display of newly added address]]>
+            </line>
+            <line>
+              <![CDATA[============================================launching Url============================================]]>
+            </line>
+            <line>
+              <![CDATA[Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]]]>
+            </line>
+            <line>
+              <![CDATA[status : Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestCase_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.app.test.TestCases@77b52d12]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-15T11:11:04Z" finished-at="2021-03-15T11:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.app.test.TestCases -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.app.test.TestCases -->
+</testng-results>

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">124.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.app.test.TestCases</td><td><a href="#m1"><b>TestCase_003</b>  ("To verify the user able create a duplicate offer with same offer type and product")</a></td><td class="numi">1</td><td>1616421550651</td><td class="numi">48452</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.app.test.TestCases</td><td><a href="#m2"><b>TestCase_001</b>  ("To verify user can able to create offer by selecting product from the list and able to create/navigate to offer Contract successfully")</a></td><td class="numi">1</td><td>1616421508435</td><td class="numi">34721</td></tr><tr class="passedodd"><td><a href="#m3"><b>TestCase_002</b>  ("To verify the contract created for the offer is listed in manager page and the product selected is displaying under the contract selected")</a></td><td class="numi">1</td><td>1616421543158</td><td class="numi">7492</td></tr><tr class="passedodd"><td><a href="#m4"><b>TestCase_004</b>  ("To verify user able to create a Privathaftpflicht offer without selecting the product")</a></td><td class="numi">1</td><td>1616421599106</td><td class="numi">7977</td></tr><tr class="passedodd"><td><a href="#m5"><b>TestCase_005</b>  ("To verify user can able to naviagte to the offer-details page from the offer creation success page")</a></td><td class="numi">1</td><td>1616421607087</td><td class="numi">11368</td></tr><tr class="passedodd"><td><a href="#m6"><b>TestCase_006</b>  ("To verify created offer is displaying in the manager page")</a></td><td class="numi">1</td><td>1616421618455</td><td class="numi">12633</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.app.test.TestCases:TestCase_003</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+description : : To verify the contract created for the offer is listed in manager page and the product selected is displaying under the contract selected<br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Logging into Clark site<br/>
+Clicked on Element having xpath : By.xpath: //span[contains(@class,'user-profile _profile-icon')]<br/>
+Clicked on Element having xpath : By.xpath: //a[@href="/de/app/login"]<br/>
+Entered value :"autotest186686914@clark.com" in the element : By.xpath: //input[@type="email"]<br/>
+Entered value :"Welcome@1" in the element : By.xpath: //input[@type="password"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Einloggen"]<br/>
+Expected element is not present :By.xpath: //div[contains(@class,'modal-container')]/button[contains(@class,'cucumber-modal-close _button-close')]<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]<br/>
+Selecting the privathaftpflicht offer <br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Loslegen"]/../../button[contains(@class,'ember-view _button')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'btn btn-primary btn')]<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja"]/../span<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja, bis zu 150 Euro"]/../span<br/>
+Confirmation for create offer <br/>
+Clicked on Element having xpath : By.xpath: //button[text()="Angebot anfordern"]<br/>
+validating the static text in the offer succes page<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,"ember-view _button")]<br/>
+Expected element is not present :By.xpath: //div[text()="Privathaftpflicht"][1]/preceding::h4[contains(text(),'Deine Angebote')]<br/>
+status : Failed<br/>
+<h3>Failure</h3>
+<p>duplicate Offer is not created expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at com.project.pages.ManagerPage.assertDuplicateOfferCreated(ManagerPage.java:50)
+<br/>at com.app.test.TestCases.TestCase_003(TestCases.java:76)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.app.test.TestCases:TestCase_006</h2>
+<div style="padding-left:3em">
+description : : To verify created offer is displaying in the manager page<br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]<br/>
+Selecting the privathaftpflicht offer <br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Loslegen"]/../../button[contains(@class,'ember-view _button')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'btn btn-primary btn')]<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja"]/../span<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja, bis zu 150 Euro"]/../span<br/>
+Confirmation for create offer <br/>
+Clicked on Element having xpath : By.xpath: //button[text()="Angebot anfordern"]<br/>
+validating the static text in the offer succes page<br/>
+validating the Zum angebot link and on offer confirmationpage and asserting the offerId  <br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,"ember-view _button")]<br/>
+Navigating to Homepage<br/>
+Clicked on Element having xpath : By.xpath: //a[@href='/de/app/'] <br/>
+Navigating to Contracts listing page<br/>
+Clicked on Element having xpath : By.xpath: //a[@role="menuitem" and text()="Verträge"]<br/>
+Navigating to contract details page<br/>
+Clicked on Element having xpath : By.xpath: //div[text()="Privathaftpflicht"]<br/>
+Asserting the offer created<br/>
+status : Passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.app.test.TestCases:TestCase_004</h2>
+<div style="padding-left:3em">
+description : : To verify user able to create a Privathaftpflicht offer without selecting the product<br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]<br/>
+Selecting the privathaftpflicht offer <br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Loslegen"]/../../button[contains(@class,'ember-view _button')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'btn btn-primary btn')]<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja"]/../span<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja, bis zu 150 Euro"]/../span<br/>
+Confirmation for create offer <br/>
+Clicked on Element having xpath : By.xpath: //button[text()="Angebot anfordern"]<br/>
+validating the static text in the offer succes page<br/>
+status : Passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.app.test.TestCases:TestCase_001</h2>
+<div style="padding-left:3em">
+description : : To verify user can able to create offer by selecting product from the list and able to create/navigate to offer Contract successfully <br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]<br/>
+Selecting the privathaftpflicht offer <br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Loslegen"]/../../button[contains(@class,'ember-view _button')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'btn btn-primary btn')]<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja"]/../span<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja, bis zu 150 Euro"]/../span<br/>
+Confirmation for create offer <br/>
+Clicked on Element having xpath : By.xpath: //button[text()="Angebot anfordern"]<br/>
+validating the static text in the offer succes page<br/>
+validating the Zum angebot link and on offer confirmationpage and asserting the offerId  <br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,"ember-view _button")]<br/>
+Selecting the product for the offer created<br/>
+Clicked on Element having xpath : By.xpath: //p[text()="DBV"]/following-sibling::button/span/span<br/>
+Registering in Clark site<br/>
+Entered value :"autotest186686914@clark.com" in the element : By.xpath: //input[@type="email"]<br/>
+Entered value :"Welcome@1" in the element : By.xpath: //input[@type="password"]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@type,'submit')]<br/>
+Filling the profie information<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="female"]/..<br/>
+Entered value :"Ella" in the element : By.xpath: //input[@name="firstName"]<br/>
+Entered value :"Dingelstedt" in the element : By.xpath: //input[@name="lastName"]<br/>
+Entered value :"Meisenweg" in the element : By.xpath: //input[@name="street"]<br/>
+Entered value :"433" in the element : By.xpath: //input[@name="houseNumber"]<br/>
+Entered value :"60306" in the element : By.xpath: //input[@name="zipcode"]<br/>
+Entered value :"Miguelbrunn" in the element : By.xpath: //input[@name="city"]<br/>
+Entered value :"22.08.1992" in the element : By.xpath: //input[@name="birthdate"]<br/>
+Entered value :"015229320777" in the element : By.xpath: //input[@name="phoneNumber"]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'ember-view _button')]<br/>
+Entering the Payment details<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'ember-view _button')]<br/>
+Entered value :"DE55500105174529223988" in the element : By.xpath: //input[contains(@name,'iban')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'ember-view _button')]<br/>
+Asserting the details in form summary<br/>
+Completing the Offer creation process with selected product<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'ember-view _button')]<br/>
+Navigating to contract page from the offer success page<br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'action')]/a[contains(@class,'ember-view _button')]<br/>
+Expected Element is present :By.xpath: //button[contains(@class,'cucumber-close-modal')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cucumber-close-modal')]<br/>
+Asserting the contract created<br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'title') and text()="Privathaftpflicht"][1]<br/>
+status : Passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.app.test.TestCases:TestCase_005</h2>
+<div style="padding-left:3em">
+description : : To verify user can able to naviagte to the offer-details page from the offer creation success page<br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,'page-navigation__link--offers _sections-link')]<br/>
+Selecting the privathaftpflicht offer <br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'box _content_1ner8p')]/span[text()="Privathaftpflicht"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Loslegen"]/../../button[contains(@class,'ember-view _button')]<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'btn btn-primary btn')]<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja"]/../span<br/>
+Clicked on Element having xpath : By.xpath: //input[@value="Ja, bis zu 150 Euro"]/../span<br/>
+Confirmation for create offer <br/>
+Clicked on Element having xpath : By.xpath: //button[text()="Angebot anfordern"]<br/>
+validating the static text in the offer succes page<br/>
+validating the Zum angebot link and on offer confirmationpage and asserting the offerId  <br/>
+Clicked on Element having xpath : By.xpath: //a[contains(@class,"ember-view _button")]<br/>
+status : Passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.app.test.TestCases:TestCase_002</h2>
+<div style="padding-left:3em">
+description : : To verify the contract created for the offer is listed in manager page and the product selected is displaying under the contract selected<br/>
+============================================launching Url============================================<br/>
+Expected Element is present :By.xpath: //body[contains(@class,'clark body--web chrome chrome89 windows blink desktop clark2 ember-application')]<br/>
+Accepting the cookies on home<br/>
+Clicked on Element having xpath : By.xpath: //button[contains(@class,'cookie-banner-accept-btn')]<br/>
+Logging into Clark site<br/>
+Clicked on Element having xpath : By.xpath: //span[contains(@class,'user-profile _profile-icon')]<br/>
+Clicked on Element having xpath : By.xpath: //a[@href="/de/app/login"]<br/>
+Entered value :"autotest186686914@clark.com" in the element : By.xpath: //input[@type="email"]<br/>
+Entered value :"Welcome@1" in the element : By.xpath: //input[@type="password"]<br/>
+Clicked on Element having xpath : By.xpath: //span[text()="Einloggen"]<br/>
+Expected Element is present :By.xpath: //div[contains(@class,'modal-container')]/button[contains(@class,'cucumber-modal-close _button-close')]<br/>
+Clicked on Element having xpath : By.xpath: //div[contains(@class,'modal-container')]/button[contains(@class,'cucumber-modal-close _button-close')]<br/>
+Navigating to Contracts listing page<br/>
+Clicked on Element having xpath : By.xpath: //a[@role="menuitem" and text()="Verträge"]<br/>
+Navigating to contract details page<br/>
+Clicked on Element having xpath : By.xpath: //div[text()="Privathaftpflicht"]<br/>
+status : Passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

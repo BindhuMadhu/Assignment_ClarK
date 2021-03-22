@@ -1,0 +1,9 @@
+com\framework\report\TestNgReporter.class
+com\framework\util\ExcelUtils.class
+com\framework\util\PropertiesUtils.class
+com\project\framework\Common.class
+com\project\framework\Constants.class
+com\project\framework\GenericEntity.class
+com\project\base\TestBase.class
+com\project\pages\Angebote.class
+com\framework\report\ExtentReporter.class
